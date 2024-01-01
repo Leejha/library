@@ -1,3 +1,4 @@
+import teser from '@rollup/plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
 
 export default [
@@ -8,6 +9,6 @@ export default [
     // 번들링 결과 파일과 형식(esm -> es modules, cjs -> commonjs)
     output: [{ file: 'dist/index.js', format: 'cjs' }],
 
-    plugins: [typescript()],
+    plugins: [typescript(), teser()],
   },
 ];
