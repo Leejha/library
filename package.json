@@ -1,16 +1,20 @@
 {
   "name": "react-components-hooks",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Easy-to-use react components and hooks",
+  "keywords": ["easy-to-use", "react", "components", "hooks", "usefull"],
+  "license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Leejha/react-components-hooks.git"
+	},
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
