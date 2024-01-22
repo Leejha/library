@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "https://github.com/Leejha/react-components-hooks.git"
   },
-  "main": "dist/index.js",
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
