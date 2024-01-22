@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/Leejha/react-components-hooks.git"
   },
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
