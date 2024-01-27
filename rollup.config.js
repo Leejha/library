@@ -1,5 +1,5 @@
 import teser from '@rollup/plugin-terser';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 
 export default [
   // js 번들링
