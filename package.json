@@ -14,14 +14,22 @@
     "type": "git",
     "url": "https://github.com/Leejha/react-components-hooks.git"
   },
+  "exports": {
+    ".": {
+      "require": "./cjs/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
+    "build": "rm -rf dist/ && rollup -c"
   },
   "author": "",
   "devDependencies": {
@@ -44,4 +52,3 @@
     "react": "^16.8.0 || ^17.0.0 || ^18"
   }
 }
-
