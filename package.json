@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -16,8 +16,8 @@
   },
   "exports": {
     ".": {
-      "require": "./cjs/index.cjs",
-      "import": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "engines": {
