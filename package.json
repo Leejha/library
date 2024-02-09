@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -26,7 +26,6 @@
   ],
   "main": "./src/index.cjs",
   "publishConfig": {
-    "access": "public",
     "exports": {
       ".": {
         "types": "./dist/index.d.ts",
