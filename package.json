@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -16,23 +16,32 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./src/index.cjs",
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "require": "./dist/index.cjs",
+        "import": "./dist/index.mjs"
+      },
+      "./package.json": "./package.json"
     }
+  },
+  "scripts": {
+    "build": "rm -rf dist/ && rollup -c"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
-  "type": "module",
-  "scripts": {
-    "build": "rm -rf dist/ && rollup -c"
-  },
-  "author": "",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -46,7 +55,6 @@
     "prettier": "^3.1.1",
     "react": "^18.2.0",
     "rollup": "^4.9.1",
-    "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
