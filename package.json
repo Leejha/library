@@ -1,6 +1,6 @@
  {
   "name": "react-components-hooks",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -14,7 +14,6 @@
     "type": "git",
     "url": "https://github.com/Leejha/react-components-hooks.git"
   },
-  "type": "module",
   "exports": {
     ".": {
       "require": "./src/index.ts",
@@ -30,7 +29,7 @@
     "exports": {
       ".": {
         "types": "./dist/index.d.ts",
-        "require": "./dist/index.cjs",
+        "require": "./dist/index.js",
         "import": "./dist/index.mjs"
       },
       "./package.json": "./package.json"
