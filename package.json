@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -16,24 +16,16 @@
   },
   "exports": {
     ".": {
-      "require": "./src/index.ts",
-      "import": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+        "require": "./dist/index.js",
+        "import": "./dist/index.mjs"
     },
     "./package.json": "./package.json"
   },
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "require": "./dist/index.js",
-        "import": "./dist/index.mjs"
-      },
-      "./package.json": "./package.json"
-    }
-  },
+  "main": "./src/index.ts",
   "scripts": {
     "build": "rm -rf dist/ && rollup -c"
   },
