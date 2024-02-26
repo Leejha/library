@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -24,12 +24,11 @@
   "files": [
     "dist"
   ],
-  "main": "./src/index.ts",
   "publishConfig": {
     "exports": {
       ".": {
         "types": "./dist/index.d.ts",
-        "require": "./dist/index.cjs",
+        "require": "./dist/index.js",
         "import": "./dist/index.mjs"
       },
       "./package.json": "./package.json"
