@@ -1,6 +1,6 @@
 {
   "name": "react-components-hooks",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Easy-to-use react components and hooks",
   "keywords": [
     "easy-to-use",
@@ -25,7 +25,8 @@
   "files": [
     "dist"
   ],
-  "main": "./src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "scripts": {
     "build": "rm -rf dist/ && rollup -c"
   },
